@@ -23,11 +23,11 @@ class NumberGuessing {
                     System.out.println("\nNo of Attempt Taken for guessing Number: " + i);
                     score = ((attempt - i) * 100) / attempt;
                     totalscore += score;
-                    System.out.println("\nYou have get score: " + score);
+                    System.out.println("\nYou have got score: " + score);
                     break;
                 } else if (playerguess > 100) {
                     System.out.println("\nOut of range");
-                    break;
+                   
                 } else if (randomNumber > playerguess) {
                     System.out.println("Guessing number is higher,Please try again");
                     i++;
