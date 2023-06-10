@@ -33,7 +33,7 @@ class Atm {
 
 class TransactionsHistory {
 
-	public static void transHistory(int transactions, String transactions_history) {
+	public void transHistory(int transactions, String transactions_history) {
 		if (transactions == 0) {
 			System.out.println("\nempty");
 		} else {
@@ -108,10 +108,11 @@ class Transfer {
 					System.out.println(amount + " Rs " + "Successfully transfer to " + Receipent);
 					String str = amount + "Rs transfer to " + Receipent + "\n";
 					transactions_history = transactions_history.concat(str);
+					return amount;
 				} else {
-					System.out.println("\nsorry ! limit is 5000.00:");
+					System.out.println("\nsorry ! limit is 25000.00:");
 				}
-				return amount;
+				
 			} else {
 				System.out.println("\nYour account balance is not sufficient.");
 			}
