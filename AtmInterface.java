@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 class Atm {
 
-	int userid = 2003;
-	int userpin = 1234;
+	int userid = 1234;
+	int userpin = 5678;
 
 	public boolean login() {
 		boolean islogin = false;
